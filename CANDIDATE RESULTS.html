@@ -1,0 +1,1002 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+ <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Results</title>
+<style type="text/css">
+.auto-style7 {
+	background-color: #008080;
+}
+.auto-style21 {
+	text-align: center;
+	color: #000080;
+	text-decoration: underline;
+}
+  /* Animations and Transitions */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    .slide-up {
+      position: relative;
+      animation: slideUp 1.5s ease-out forwards;
+      opacity: 0;
+    }
+
+    .zoom-in {
+      transform: scale(0.5);
+      animation: zoomIn 1s forwards;
+      opacity: 0;
+    }
+
+    .color-change {
+      transition: color 0.3s ease;
+    }
+
+    .color-change:hover {
+      color: #ff6347;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+.auto-style27 {
+	position: relative;
+	animation: slideUp 1.5s ease-out forwards;
+	opacity: 0;
+	text-align: center;
+	color: #008000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fade In/Out Transition */
+.fade {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
+/* Scale (Zoom In/Out) Transition */
+.scale {
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.scale.show {
+  transform: scale(1);
+}
+
+/* Slide Up/Down Transition */
+.slide-up {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide-up.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide-down {
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide-down.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Color Change Transition */
+.color-change {
+  background-color: #3498db;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.color-change:hover {
+  background-color: #e74c3c;
+}
+
+/* Rotate Transition */
+.rotate {
+  transform: rotate(0deg);
+  transition: transform 1s ease-in-out;
+}
+
+.rotate:hover {
+  transform: rotate(360deg);
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+/* Slide In From Left Animation */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Color Fade Animation */
+@keyframes colorFade {
+  0% {
+    background-color: #3498db;
+  }
+  50% {
+    background-color: #e74c3c;
+  }
+  100% {
+    background-color: #3498db;
+  }
+}
+
+.color-fade {
+  animation: colorFade 5s infinite;
+}
+
+/* Rotate Animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-animation {
+  animation: rotate 2s infinite linear;
+}
+
+/* Hover Effects Combined with Transition */
+.hover-effect {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-effect:hover {
+  background-color: #e74c3c;
+  transform: scale(1.1);
+}
+
+@keyframes hover-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hover-effect:hover {
+  animation: hover-pulse 1s infinite;
+}
+
+/* Multiple Transitions Together */
+.multi-transition {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  transition: width 0.5s ease, height 0.5s ease, background-color 0.5s ease;
+}
+
+.multi-transition:hover {
+  width: 250px;
+  height: 250px;
+  background-color: #e74c3c;
+}
+
+/* Fade In/Out Transition */
+.fade {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
+/* Scale (Zoom In/Out) Transition */
+.scale {
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.scale.show {
+  transform: scale(1);
+}
+
+/* Slide Up/Down Transition */
+.slide-up {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide-up.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide-down {
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide-down.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Color Change Transition */
+.color-change {
+  background-color: #3498db;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.color-change:hover {
+  background-color: #e74c3c;
+}
+
+/* Rotate Transition */
+.rotate {
+  transform: rotate(0deg);
+  transition: transform 1s ease-in-out;
+}
+
+.rotate:hover {
+  transform: rotate(360deg);
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+/* Slide In From Left Animation */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Color Fade Animation */
+@keyframes colorFade {
+  0% {
+    background-color: #3498db;
+  }
+  50% {
+    background-color: #e74c3c;
+  }
+  100% {
+    background-color: #3498db;
+  }
+}
+
+.color-fade {
+  animation: colorFade 5s infinite;
+}
+
+/* Rotate Animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-animation {
+  animation: rotate 2s infinite linear;
+}
+
+/* Hover Effects Combined with Transition */
+.hover-effect {
+  background-color:#179090;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-effect:hover {
+  background-color:#00FFFF;
+  transform: scale(1.1);
+}
+
+@keyframes hover-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hover-effect:hover {
+  animation: hover-pulse 1s infinite;
+}
+
+/* Multiple Transitions Together */
+.multi-transition {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  transition: width 0.5s ease, height 0.5s ease, background-color 0.5s ease;
+}
+
+.multi-transition:hover {
+  width: 250px;
+  height: 250px;
+  background-color: #e74c3c;
+}
+
+ 
+ /* Styles for Footer */
+#footer p {
+	color: #fff;
+	font-size: medium;
+	margin-top: 2px;
+	margin-bottom: 6px;
+}
+#footer a {
+	color: #fff;
+	text-decoration: underline;
+}
+#footer a:hover {
+	color: #000;
+	text-decoration: none;
+
+ 
+}
+     .container {
+            padding: 0px;
+            border-radius: 0px;
+            text-align: center;
+            width:100%;
+           
+        }
+
+.auto-style2 {
+	color: #00FF00;
+	text-align: center;
+	font-family: "Arial Rounded MT Bold";
+	background-color: #137D7D;
+}
+.auto-style39 {
+	font-size: x-small;
+	border-width: 0px;
+	background-color: #137D7D;
+	margin-top: 0px;
+	color: #FFFFFF;
+}
+
+    
+.auto-style19 {
+	border-style: none;
+	border-width: medium;
+	text-align: center;
+}
+
+
+.auto-style41 {
+	color: #FFFFFF;
+}
+
+
+.auto-style43 {
+	text-align: center;
+	background-color: #7B9292;
+}
+.auto-style44 {
+	font-size: small;
+}
+.auto-style45 {
+	font-size: small;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+.auto-style46 {
+	color: #FFFFFF;
+	font-size: small;
+}
+
+
+ 
+ 
+        .auto-style58 {
+	font-size: smaller;
+}
+
+
+ 
+ 
+        .auto-style59 {
+	font-size: medium;
+}
+
+
+ 
+ 
+        .auto-style6 {
+	color: #000080;
+}
+.auto-style60 {
+	text-align: center;
+}
+.auto-style61 {
+	margin-left: -210px;
+}
+
+
+ 
+ 
+        * {
+      box-sizing: border-box;
+    }
+    
+
+ 
+ 
+        .auto-style62 {
+	font-family: "Arial Rounded MT Bold";
+}
+
+
+ 
+ 
+        </style>
+</head>
+
+<body style="margin: 0; background-color: #FFFFFF; height: 803px;" class="auto-style7">
+			<tr>
+				<td style="width: 81px">
+				</td>
+			</tr>
+		</table>
+		<table style="width: 100%; height: 112px" class="auto-style7">
+			<tr>
+				<td style="width: 10vw; height: 80px;" >
+				<img  alt="" style="height:auto" src="logo.png" width="100%" /></td>
+				<td style="width: 90vw; height:80px;" >
+<h1 class="auto-style2" style="font-size:3.5vw" ><span class="auto-style62">ATLAS HIGH SCHOOL E-LEARNING</span> </h1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="height: 26px" class="auto-style58">
+		<table align="center" class="auto-style39" style="width: 100%" cellpadding="0" cellspacing="0">
+			<tr>
+				<td class="auto-style19" style="width: 10%">
+				<a href="index.html"><span class="hover-effect" class="auto-style20" style="font-size: clamp(8px, 1.5vw, 12px)">HOME 
+				</span></a></td>
+				<td class="auto-style19" style="width: 17%">
+				<a href="PURPOSE.html"><span  class="hover-effect" class="auto-style20" style="font-size:clamp(8px, 1.5vw, 12px)">PURPOSE</span></a></td>
+				<td class="auto-style19" style="width: 30%"><a href="STAKE%20HOLDERS.html">
+				<span  class="hover-effect" class="auto-style20"style="font-size:clamp(8px, 1.5vw, 12px)">STAKEHOLDERS</span></a></td>
+				<td class="auto-style19" style="width: 17%">
+				<a href="CANDIDATE%20RESULTS.html">
+				<span  class="hover-effect" class="auto-style20"style="font-size:clamp(8px, 1.5vw, 12px)">&nbsp;RESULTS</span></a></td>
+				<td class="auto-style19" style="width: 25%">
+				<a href="E-LEARNING.html"><span class="hover-effect" class="auto-style27"style="font-size:clamp(8px, 1.5vw, 12px)">E-LEARNING</span></a></td>
+			</tr>
+		</table></td>
+			</tr>
+		</table>
+
+			<h1 class="auto-style21" style="font-size:2.5vw">RESULTS</h1>
+<p  class="auto-style27" style="animation-delay: 0.5s;"class="auto-style25">
+				<img class="slide-up" alt="ATLAS CANDIDATES S4 2024" height="183" src="download.png" width="275" /><br />
+			</p>
+			<p class="auto-style60">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; font-size: 20px;">
+				<span class="auto-style6" style="border-style: none; border-color: inherit; border-width: 0px; background: ; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; font-style: normal;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; font-family: helvetica-w01-roman, sans-serif;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				<span class="wixui-rich-text__text" style="border-style: none; border-color: inherit; border-width: 0px; background: ; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<strong style="font-size:2vw">U2261 - ATLAS HIGH SCHOOL, GAYAZA-2024 UCE RESULTS</strong></span></span></span></span></span></span></p>
+			<form  class="auto-style61"  style="width: 1172px">
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				INDEX NO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				RESULT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				SUBJECT ACHIEVEMENTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PROJECT</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/001 TASOBYE WINNIE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-A |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				AGR-B&nbsp;&nbsp;&nbsp; PHY-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CHE-B&nbsp;&nbsp;&nbsp; | BIO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/002 MAYANJA ERICK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CHE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				BIO-C&nbsp;&nbsp;&nbsp;&nbsp; CST-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/003 NALWOGA PATIENCE ESTHER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				KIS-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CHE-C&nbsp;&nbsp;&nbsp; |BIO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/005 NAZZIWA SAFINAH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				IRE-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				LUG-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CHE-B |&nbsp;&nbsp; 
+				BIO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/006 TUMWEBAZE PRIZE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CHE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BIO-C&nbsp;&nbsp;&nbsp;&nbsp; 
+				CST-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/007 NANTEGE MARIAM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				IRE-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CHE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BIO-C&nbsp;&nbsp;&nbsp;&nbsp; 
+				ENT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/010 MAYANJA MARTIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIS-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PHY-B&nbsp;&nbsp;&nbsp;&nbsp; CHE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				BIO-C&nbsp;&nbsp;&nbsp;&nbsp; CST-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/012 BYAMUKAMA MOSES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				AGR-B&nbsp;&nbsp;&nbsp;&nbsp; PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CHE-B |&nbsp;&nbsp; BIO-C&nbsp;&nbsp;&nbsp;&nbsp; B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/013 NANSAMBA SHEIRA LYDIA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIS-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AGR-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CHE-C |&nbsp;&nbsp; BIO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/015 AMONY HELLEN RUTH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				LIT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				HIST-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GEO-B |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CHE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				BIO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/018 MUTUNGI ELTON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CHE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				BIO-C&nbsp;&nbsp;&nbsp;&nbsp; CST-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/020 KAZIBWE PETER GIDEON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PHY-B&nbsp;&nbsp;&nbsp; CHE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				BIO-B I&nbsp;&nbsp;&nbsp;&nbsp; PS-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/023 KASENDWA HASHIB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				IRE-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				AGR-B&nbsp;&nbsp;&nbsp;&nbsp; PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CHE-B |&nbsp;&nbsp;&nbsp; BIO-C&nbsp;&nbsp;&nbsp;&nbsp; B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/025 LUKWAGO MAURICE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LUG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				MAT-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CHE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BIO-C&nbsp;&nbsp;&nbsp;&nbsp; 
+				B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/036 NYANZI TENDO ISAAC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				AGR-C&nbsp;&nbsp;&nbsp;&nbsp; PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CHE-C&nbsp;&nbsp;&nbsp;&nbsp; BIO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/041 TWIKIRISE TREVOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; LUG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				MAT-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PHY-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CHE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BIO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/044 SSEWAGUDDE ALLAN SIMON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CHE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				BIO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CST-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/046 TALEMWA MERCY MAJORIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CHE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				BIO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CST-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/091 RUBANGAKENE MORGAN .C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PHY-A&nbsp;&nbsp;&nbsp;&nbsp; CHE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				BIO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IPS-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/060 KIVUMBI JONAH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PHY-B&nbsp;&nbsp;&nbsp;&nbsp; CHE-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				BIO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IPS-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				B&nbsp;</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/063 MUHINDO JOHN BISIKA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PHY-B&nbsp;&nbsp;&nbsp;&nbsp; CHE-D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				BIO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CST-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/066 NAGINDA PATIENCE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PHY-B&nbsp;&nbsp;&nbsp;&nbsp; CHE-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				BIO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I PS-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/098 KATYA ALVIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CHE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				BIO-C&nbsp;&nbsp;&nbsp;&nbsp; CST-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				B&nbsp;</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/100 KAWEESA ELVIS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				HIS-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GEO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				LUG-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				AGR-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PHY-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CHE-B&nbsp; |&nbsp; BIO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/101 NALUTAAYA JOANITA JOSELINE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				HIS-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				KIS-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CHE-B&nbsp;&nbsp;&nbsp;&nbsp; 
+				BIO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CST-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/103 AMAL BRIAN FELIX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIST-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				AGR-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CHE-C&nbsp;&nbsp;&nbsp; BIO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/106 NSINJO ALICE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				LIT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIS-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PHY-B&nbsp;&nbsp;&nbsp;&nbsp; CHE-B&nbsp;&nbsp; | BIO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				B&nbsp;</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/107 KINAALWA FRANCIS FIORE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				ENG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIS-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KIS-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				AGR-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PHY-B&nbsp;&nbsp;&nbsp;&nbsp; 
+				CHE-B&nbsp;&nbsp; | BIO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/110 AGENORWOT DAPHINE HAPPY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				ENG-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LIT-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				HIS-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CHE-B&nbsp;&nbsp;&nbsp;&nbsp; 
+				BIO-B&nbsp;&nbsp;&nbsp;&nbsp; ENT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/111 JAMAL KISAKYE SHADIA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				ENG-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				HIS-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				AGR-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PHY-B&nbsp;&nbsp;&nbsp;&nbsp; 
+				CHE-B&nbsp;&nbsp; | BIO-C&nbsp;&nbsp;&nbsp;&nbsp; C</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/112 LAJARA ANGELINA HOPE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				ENG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LIT-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				HIS-A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GEO-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CHE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				BIO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENT-C&nbsp;&nbsp;&nbsp;&nbsp; 
+				B</span></span></p>
+				<p class="auto-style3" style="text-align: center; color: rgb(var(--color_15)); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0em; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background: transparent; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 0px; outline: 0px; padding: 0px; vertical-align: baseline; pointer-events: auto; font-size: 16px; line-height: 1.75em; margin-block: 0px; margin: 0px;">
+				<span class="auto-style61" style="font-size: xx-small; border-style: none; border-color: inherit; border-width: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+				<span class="wixui-rich-text__text" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-decoration: underline;">
+				U2261/126 LUBAJO BRIAN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENG-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CRE-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIS-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				GEO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAT-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				AGR-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PHY-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				CHE-B&nbsp;&nbsp; |&nbsp; BIO-C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&nbsp;</span></span></span></p>
+			</form>
+			<p class="auto-style60">
+			&nbsp;</p>
+			<div id="footer" style="font-size:2vw; height: 156px;" class="auto-style43" style="height: 150px">
+				<a href="HOME%20PAGE.html"><br />
+			</a>
+		<span class="auto-style41"><a href="HOME%20PAGE.html">Home</a> | 
+			<a href="PURPOSE.html">Purpose</a> 
+		|<span class="auto-style44"> </span> </span><a href="GUIDE.html">G<span class="auto-style45">uide</span></a><span class="auto-style46"> |
+		</span>
+		<span class="auto-style45"><a href="STAKE%20HOLDERS.html">Stake holders</a></span><span class="auto-style46">|
+		</span>
+			<a href="CANDIDATE%20RESULTS.html">R<span class="auto-style45">esults</span></a><span class="auto-style46"> |
+		</span>
+			<a href="E-LEARNING.html">E<span class="auto-style45">-learning</span></a><span class="auto-style41"><span class="auto-style44"> |</span>
+		Suggestions |
+		</span>
+		<a href="file:///C:/Users/ATLAS/Documents/My%20Web%20Sites/mysite3/site_map/default.html">
+		<br class="auto-style41" />
+		<br class="auto-style41" />
+		</a><span class="auto-style41">Copyright © 0000 ATLAS HIGH SCHOOL. All Rights Reserved<br />
+		<br />
+		Designed by Kalema Micheal, email:<span class="auto-style59" style="font-size:2vw"> </span> </span> <a href="kalemamicheal076@gmail.com">
+				<span class="auto-style44">k</span><span class="auto-style45">alemamicheal076@gmail.com</span></a><span class="auto-style41"> contact: 
+		</span> <a href="tel:0760700636"> <span class="auto-style41">0760700636<br />
+			</span></a></div id="footer">
+		</body>
+
+</html>
