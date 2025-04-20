@@ -1,0 +1,695 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html lang="en">
+  <html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>OL MTC media</title>
+<style type="text/css">
+a:active {
+	color: #00FF00;
+}
+ /* Animations and Transitions */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    .slide-up {
+      position: relative;
+      animation: slideUp 1.5s ease-out forwards;
+      opacity: 0;
+    }
+
+    .zoom-in {
+      transform: scale(0.5);
+      animation: zoomIn 1s forwards;
+      opacity: 0;
+    }
+
+    .color-change {
+      transition: color 0.3s ease;
+    }
+
+    .color-change:hover {
+      color: #ff6347;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+/* Fade In/Out Transition */
+.fade {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
+/* Scale (Zoom In/Out) Transition */
+.scale {
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.scale.show {
+  transform: scale(1);
+}
+
+/* Slide Up/Down Transition */
+.slide-up {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide-up.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide-down {
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide-down.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Color Change Transition */
+.color-change {
+  background-color: #3498db;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.color-change:hover {
+  background-color: #e74c3c;
+}
+
+/* Rotate Transition */
+.rotate {
+  transform: rotate(0deg);
+  transition: transform 1s ease-in-out;
+}
+
+.rotate:hover {
+  transform: rotate(360deg);
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+/* Slide In From Left Animation */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Color Fade Animation */
+@keyframes colorFade {
+  0% {
+    background-color: #3498db;
+  }
+  50% {
+    background-color: #e74c3c;
+  }
+  100% {
+    background-color: #3498db;
+  }
+}
+
+.color-fade {
+  animation: colorFade 5s infinite;
+}
+
+/* Rotate Animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-animation {
+  animation: rotate 2s infinite linear;
+}
+
+/* Hover Effects Combined with Transition */
+.hover-effect {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-effect:hover {
+  background-color: #e74c3c;
+  transform: scale(1.1);
+}
+
+@keyframes hover-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hover-effect:hover {
+  animation: hover-pulse 1s infinite;
+}
+
+/* Multiple Transitions Together */
+.multi-transition {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  transition: width 0.5s ease, height 0.5s ease, background-color 0.5s ease;
+}
+
+.multi-transition:hover {
+  width: 250px;
+  height: 250px;
+  background-color: #e74c3c;
+}
+
+/* Fade In/Out Transition */
+.fade {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
+/* Scale (Zoom In/Out) Transition */
+.scale {
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.scale.show {
+  transform: scale(1);
+}
+
+/* Slide Up/Down Transition */
+.slide-up {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide-up.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide-down {
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide-down.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Color Change Transition */
+.color-change {
+  background-color: #3498db;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.color-change:hover {
+  background-color: #e74c3c;
+}
+
+/* Rotate Transition */
+.rotate {
+  transform: rotate(0deg);
+  transition: transform 1s ease-in-out;
+}
+
+.rotate:hover {
+  transform: rotate(360deg);
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+/* Slide In From Left Animation */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Color Fade Animation */
+@keyframes colorFade {
+  0% {
+    background-color: #3498db;
+  }
+  50% {
+    background-color: #e74c3c;
+  }
+  100% {
+    background-color: #3498db;
+  }
+}
+
+.color-fade {
+  animation: colorFade 5s infinite;
+}
+
+/* Rotate Animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-animation {
+  animation: rotate 2s infinite linear;
+}
+
+/* Hover Effects Combined with Transition */
+.hover-effect {
+  background-color:#179090;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-effect:hover {
+  background-color:#00FFFF;
+  transform: scale(1.1);
+}
+
+@keyframes hover-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hover-effect:hover {
+  animation: hover-pulse 1s infinite;
+}
+
+/* Multiple Transitions Together */
+.multi-transition {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  transition: width 0.5s ease, height 0.5s ease, background-color 0.5s ease;
+}
+
+.multi-transition:hover {
+  width: 250px;
+  height: 250px;
+  background-color: #e74c3c;
+}
+/* Hover Effects Combined with Transition */
+.hover-effect3 {
+  background-color:#f0f8ff;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-effect3:hover {
+  background-color:#f0f8ff;
+  transform: scale(1.2);
+}
+
+
+.auto-style22 {
+	text-align: center;
+	color: #000080;
+	text-decoration: underline;
+}
+
+
+.auto-style23 {
+	text-align: center;
+	background-color: #B4B4E8;
+}
+
+
+.auto-style24 {
+	text-align: center;
+}
+.auto-style9 {
+	font-size: small;
+	border-width: 0px;
+	background-color: #137D7D;
+	margin-top: 0px;
+	color: #FFFFFF;
+}
+.auto-style19 {
+	border-style: none;
+	border-width: medium;
+	text-align: center;
+	color: #FFFFFF;
+}
+.auto-style25 {
+	border-style: none;
+	border-width: medium;
+	color: #FFFFFF;
+}
+.auto-style26 {
+	color: #FFFFFF;
+}
+
+ 
+</style>
+</head>
+
+<body style="margin: 0; background-color: #f0f8ff; height: 90px; "  
+   > 
+<div class="auto-style24">
+<logo><img src="../logo.png"</logo height="89" width="119">
+&nbsp;<h1 class="auto-style22">O-LEVEL MATH</h1>
+		<table align="center" class="auto-style9" style="width: 89%" cellpadding="0" cellspacing="0">
+			<tr>
+				<td class="auto-style19" style="width: 159px">
+				<a href="../E-LEARNING.html"><span class="auto-style26">E-LEARNING</span></a></td>
+				<td class="auto-style25" style="width: 159px">
+				<a href="O-LEVEL%20MTC.html"><span class="auto-style26">BACK</span></a></td>
+			</tr>
+		</table>
+
+<nav id="navigation">
+<table align="center" style="width: 90%">
+	<tr>
+		<td class="auto-style23">REFERENCE MEDIA</td>
+	</tr>
+</table></nav>
+
+
+
+<div class="container">
+  </div>
+</div>
+<table align="center" cellspacing="1" style="width: 98%; height: 100%">
+	<tr>
+		<td class="auto-style24">
+		&nbsp;</td>
+		<td class="auto-style24">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">
+		&nbsp;</td>
+		<td class="auto-style24">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">
+		&nbsp;</td>
+		<td class="auto-style24">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">
+		&nbsp;</td>
+		<td class="auto-style24">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">
+		&nbsp;</td>
+		<td class="auto-style24">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">
+		&nbsp;</td>
+		<td class="auto-style24">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">
+		&nbsp;</td>
+		<td class="auto-style24">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">
+		&nbsp;</td>
+		<td class="auto-style24">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">
+		&nbsp;</td>
+		<td class="auto-style24">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">
+		&nbsp;</td>
+		<td class="auto-style24">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">
+		&nbsp;</td>
+		<td class="auto-style24">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">
+		&nbsp;</td>
+		<td class="auto-style24">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">
+		&nbsp;</td>
+		<td class="auto-style24">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">
+		&nbsp;</td>
+		<td class="auto-style24">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">
+		&nbsp;</td>
+		<td class="auto-style24">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">&nbsp;</td>
+		<td class="auto-style24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">&nbsp;</td>
+		<td class="auto-style24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">&nbsp;</td>
+		<td class="auto-style24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">&nbsp;</td>
+		<td class="auto-style24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">&nbsp;</td>
+		<td class="auto-style24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">&nbsp;</td>
+		<td class="auto-style24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">&nbsp;</td>
+		<td class="auto-style24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">&nbsp;</td>
+		<td class="auto-style24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">&nbsp;</td>
+		<td class="auto-style24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">&nbsp;</td>
+		<td class="auto-style24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">&nbsp;</td>
+		<td class="auto-style24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">&nbsp;</td>
+		<td class="auto-style24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="auto-style24">&nbsp;</td>
+		<td class="auto-style24">&nbsp;</td>
+	</tr>
+</table>
+
+
+
