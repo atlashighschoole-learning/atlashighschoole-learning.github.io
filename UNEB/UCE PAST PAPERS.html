@@ -1,7 +1,9 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+ <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta content="en-us" http-equiv="Content-Language" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>UCE</title>
@@ -22,13 +24,13 @@
       -webkit-overflow-scrolling: touch;
       scroll-behavior: smooth;
       
-      width: 20%;
-      max-width: 600px;
-      padding: 20px;
+      width: 100px;
+      max-width: 200px;
+      padding: 10px;
       background-color: #fff;
       border: 1px solid #ddd;
       border-radius: 8px;
-      height: 18vh;
+      height: 20vh;
       overflow: hidden;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: height 0.3s ease;
@@ -36,7 +38,7 @@
 
     /* Style for the expanded state */
     .expandable-container.expanded {
-      height: 80vh;
+      height: 90vh;
     }
 
     /* Style for the header inside the expandable container */
@@ -82,12 +84,12 @@
 .auto-style1 {
 height:20hv;
 
-	height: 20vh;
+	
 	background-color: #FFFFFF;
-	margin-top: 0;
+	
 	margin-left: 20%;
 	width: 80%;
-	text-align: center;
+	text-align: right;
 }
 
 
@@ -171,18 +173,15 @@ height:20hv;
         .responsive-iframe {
 	width: 100%;
 	max-width: 600px;
-	height: 480px;
+	height: 100%;
 	border: none;
 }
 .iframe-wrapper {
 	display: flex;
 	justify-content: center;
-}
+	width: 100%;
+	height: 100%;
 
-
-
-.auto-style4 {
-	color: #000000;
 }
 
 
@@ -198,6 +197,11 @@ height:20hv;
       background-color: #B9E4E4;}
 
 
+.auto-style101 {
+	color: #FFFFFF;
+}
+
+
 </style>
 </head>
 
@@ -211,8 +215,10 @@ height:20hv;
   <div class="auto-style1">
 	
 	<img alt="" height="50px" src="../logo.png" style="float: right" width="50px" /><br />
-	  <span class="auto-style3" style="font-size:clamp(13px, 3vw, 25px)"><strong>UCE PAST PAPERS<br />
-	  </strong></span><br />
+	  <strong>
+	  <span class="auto-style3" style="font-size:clamp(13px, 3vw, 25px)">UCE PAST PAPERS<br />
+	  </span>
+	  </strong><br />
 	  <span  class="auto-style100" style="font-size:clamp(12px, 3vw, 20px)"><a href="../E-LEARNING.html">Back to E-learning</a></span></div>
 
 <div class="container20" id="contentContainer">
@@ -497,33 +503,54 @@ function showContent(section) {
     <button class="toggle-btn" id="toggleButton" style="font-size: clamp(16px, 3vw, 18px)">Show 
 	more</button>
     <div class="scroll-container" >  
-<p><button onclick="showContent('s1')" style="font-size:clamp(12px, 2vw, 16px)">Biology 1</button></p>
-<p><button onclick="showContent('s2')" style="font-size:clamp(12px, 2vw, 16px)">Biology 2</button></p>
-<p><button onclick="showContent('s3')" style="font-size:clamp(12px, 2vw, 16px)">Physics 2</button></p>
-<p><button onclick="showContent('s4')" style="font-size:clamp(12px, 2vw, 16px)">Chemistry 1</button></p>
-<p><button onclick="showContent('s5')" style="font-size:clamp(12px, 2vw, 16px)">Chemistry 2</button></p>
-<p><button onclick="showContent('s6')" style="font-size:clamp(12px, 2vw, 16px)">Math</button></p>
-<p><button onclick="showContent('s7')" style="font-size:clamp(12px, 2vw, 16px)">English</button></p>
-<p><button onclick="showContent('s8')" style="font-size:clamp(12px, 2vw, 16px)">Geography</button></p>
-		
-<p><button onclick="showContent('s9')" style="font-size:clamp(12px, 2vw, 16px)">History</button></p>
-<p><button onclick="showContent('s10')" style="font-size:clamp(12px, 2vw, 16px)">Litrature</button></p>
-<p><button onclick="showContent('s11')" style="font-size:clamp(12px, 2vw, 16px)">ICT 1</button></p>
-<p><button onclick="showContent('s12')" style="font-size:clamp(12px, 2vw, 16px)">ICT 2</button></p>
-<p><button onclick="showContent('s13')" style="font-size:clamp(12px, 2vw, 16px)">Agric 1</button></p>
-<p><button onclick="showContent('s14')" style="font-size:clamp(12px, 2vw, 16px)">Agric 2</button></p>
-<p><button onclick="showContent('s15')" style="font-size:clamp(12px, 2vw, 16px)">Art 1</button></p>
-<p><button onclick="showContent('s16')" style="font-size:clamp(12px, 2vw, 16px)">Art 2</button></p>
-<p><button onclick="showContent('s17')" style="font-size:clamp(12px, 2vw, 16px)">CRE</button></p>
-<p><button onclick="showContent('s18')" style="font-size:clamp(12px, 2vw, 16px)">IRE</button></p>
-<p><button onclick="showContent('s19')" style="font-size:clamp(12px, 2vw, 16px)">PE 1</button></p>
-<p><button onclick="showContent('s20')" style="font-size:clamp(12px, 2vw, 16px)">PE 2</button></p>
-
-
-<p><button onclick="showContent('s21')" style="font-size:clamp(12px, 2vw, 16px)">Kisw 1</button></p>
-<p><button onclick="showContent('s22')" style="font-size:clamp(12px, 2vw, 16px)">Kisw 2</button></p>
-<p><button onclick="showContent('s23')" style="font-size:clamp(12px, 2vw, 16px)">Luganda 1</button></p>
-<p><button onclick="showContent('s24')" style="font-size:clamp(12px, 2vw, 16px)">Luganda 2</button></p>
+<p><button onclick="showContent('s1')" style="height: 20px">Biology 1</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s2')" style="height: 20px">Biology 2</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s3')" style="height: 20px">Physics 2</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s4')" style="height: 20px">Chemistry 1</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s5')" style="height: 20px">Chemistry 2</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s6')" style="height: 20px">Math</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s7')" style="height: 20px">English</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s8')" style="height: 20px">Geography</button></p>
+<p style="height: 5px" class="auto-style101">.</p>		
+<p><button onclick="showContent('s9')" style="height: 20px">History</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s10')" style="height: 20px">Litrature</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s11')" style="height: 20px">ICT 1</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s12')" style="height: 20px">ICT 2</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s13')" style="height: 20px">Agric 1</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s14')" style="height: 20px">Agric 2</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s15')" style="height: 20px">Art 1</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s16')" style="height: 20px">Art 2</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s17')" style="height: 20px">CRE</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s18')" style="height: 20px">IRE</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s19')" style="height: 20px">PE 1</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s20')" style="height: 20px">PE 2</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s21')" style="height: 20px">Kisw 1</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s22')" style="height: 20px">Kisw 2</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s23')" style="height: 20px">Luganda 1</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
+<p><button onclick="showContent('s24')" style="height: 20px">Luganda 2</button></p>
+<p style="height: 5px" class="auto-style101">.</p>
 
 
 
